@@ -1,0 +1,35 @@
+{
+  /*
+   *Formatting for new entries:
+   *”name”: Actually, we can probably skip name
+   *”blurb”:
+   *”tags”:
+   *”epfeat”:
+   *”epment”:
+   */
+  “people”: [
+    {
+      “name:“ Walter Freeman
+      “tags”: [
+        flim-flam man,
+        scientist
+      ]
+      “epfeat”: [
+        //add
+      ]
+      “epment”: [
+        //add
+      ]
+    },
+    {
+      “name”: Allen Dulles
+      “tags”: [
+        spook
+      ]
+      “epfeat”: [
+        //add
+      ]
+      “epment”: [
+        //add
+      ]
+    ]
