@@ -1,28 +1,28 @@
 {
   “people”: [
     {
-      “name:“ Walter Freeman
+      “name": "Walter Freeman",
       “tags”: [
-        flim-flam man,
-        scientist
+        "flim-flam man",
+        "scientist"
       ],
       “epfeat”: [
-        
+        300
       ],
       “epment”: [
-        
+        300
       ]
     },
     {
-      “name”: Allen Dulles
+      “name”: "Allen Dulles",
       “tags”: [
-        spook
+        "spook"
       ],
       “epfeat”: [
-        
+        300
       ],
       “epment”: [
-        
+        300
       ]
     }
   ]
