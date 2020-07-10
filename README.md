@@ -5,7 +5,9 @@ Building a digital cordboard of red thread. Starting with just a raw JSON file a
 People cataloged as follows:
 
 "name": Self explanatory
+
 "blurb": A short description
+
 "tags": Descriptors for sorting/filtering. List of tags in use below
 "epfeat": Episodes where this person is part of the story, rather than an aside or a refrence
 "epment": Episodes where this person is mentioned, or brought up, but they aren't directly relevant to the story
