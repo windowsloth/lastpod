@@ -1,8 +1,9 @@
 {
+  "description": "A database of people featured on the Last Podcast on the Left and the episodes that they appear in",
   "people": [
     {
       "name": "Walter Freeman",
-      "blurb": "",
+      "blurb": "Invented and popularized the lobotomy",
       "tags": [
         "flim-flam man",
         "scientist"
@@ -18,7 +19,7 @@
     },
     {
       "name": "Allen Dulles",
-      "blurb": "",
+      "blurb": "Infamous former CIA director",
       "tags": [
         "spook"
       ],
@@ -32,7 +33,7 @@
     },
     {
       "name": "Helena Blavatsky",
-      "blurb": "",
+      "blurb": "Incredibly influential early 20th century occultist",
       "tags": [
         "occultist",
         "theosophist",
@@ -48,13 +49,14 @@
       ]
     },
     {
-      "name":"",
-      "blurb":"",
+      "name":"Aleš Hrdlička",
+      "blurb":"Anthropologist, curator at the Smithsonian",
       "tags": [
-
+        "scientist"
       ],
       "epfeat": [
-
+        406,
+        413
       ],
       "epment": [
 
