@@ -2,27 +2,75 @@
   "people": [
     {
       "name": "Walter Freeman",
+      "blurb": "",
       "tags": [
         "flim-flam man",
         "scientist"
       ],
       "epfeat": [
-        
+        413,
+        414,
+        70320
       ],
       "epment": [
-        
+
       ]
     },
     {
       "name": "Allen Dulles",
+      "blurb": "",
       "tags": [
         "spook"
       ],
       "epfeat": [
-        
+        404,
+        413
       ],
       "epment": [
-        
+
+      ]
+    },
+    {
+      "name": "Helena Blavatsky",
+      "blurb": "",
+      "tags": [
+        "occultist",
+        "theosophist",
+        "spiritualist"
+      ],
+      "epfeat": [
+        410,
+        411,
+        412
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"",
+      "blurb":"",
+      "tags": [
+
+      ],
+      "epfeat": [
+
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"",
+      "blurb":"",
+      "tags": [
+
+      ],
+      "epfeat": [
+
+      ],
+      "epment": [
+
       ]
     }
   ]
