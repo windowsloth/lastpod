@@ -40,3 +40,5 @@ Tags (will be updated over time):
   *Spook
   
   *Spree killer
+  
+  *Historical figure
