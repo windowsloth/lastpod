@@ -114,7 +114,9 @@
         169,
         170,
         216,
-        217
+        217,
+        293,
+        294
       ],
       "epment": [
 
@@ -134,6 +136,35 @@
         404,
         405,
         70320
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Betty & Barney Hill",
+      "blurb":"First major abduction case",
+      "tags": [
+        "alien contacee/witness",
+        "abductee"
+      ],
+      "epfeat": [
+        169,
+        170
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Bill Cooper",
+      "blurb":"Radio host and OG conspiracy theorist",
+      "tags": [
+
+      ],
+      "epfeat": [
+        293,
+        294
       ],
       "epment": [
 
