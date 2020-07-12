@@ -11,7 +11,8 @@
       "epfeat": [
         413,
         414,
-        70320
+        70320,
+        "Trap!"
       ],
       "epment": [
 
@@ -25,7 +26,8 @@
       ],
       "epfeat": [
         404,
-        413
+        413,
+        "Trap!"
       ],
       "epment": [
 
@@ -33,7 +35,7 @@
     },
     {
       "name": "Helena Blavatsky",
-      "blurb": "Incredibly influential early 20th century occultist",
+      "blurb": "Extremely influential early 20th century occultist",
       "tags": [
         "occultist",
         "theosophist",
