@@ -104,6 +104,42 @@
       ]
     },
     {
+      "name":"Stanton T. Friedman",
+      "blurb":"Nuclear physicist and ufologist, uncovered the Majesty 12 papers",
+      "tags": [
+        "ufologist",
+        "scientist"
+      ],
+      "epfeat": [
+        169,
+        170,
+        216,
+        217
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"John F. Kennedy",
+      "blurb":"35th President of the US",
+      "tags": [
+        "historical figure"
+      ],
+      "epfeat": [
+        400,
+        401,
+        403,
+        31320,
+        404,
+        405,
+        70320
+      ],
+      "epment": [
+
+      ]
+    },
+    {
       "name":"",
       "blurb":"",
       "tags": [
