@@ -171,6 +171,133 @@
       ]
     },
     {
+      "name":"J. Allen Hynek",
+      "blurb":"Ufologist who began as a skeptic working on Project Blue Book",
+      "tags": [
+        "scientist",
+        "spook"
+      ],
+      "epfeat": [
+        305
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Timothy McVeigh",
+      "blurb":"Perpatrator of the Oklahoma City bombing",
+      "tags": [
+        "mass-murderer"
+      ],
+      "epfeat": [
+        274,
+        275,
+        276
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"David Koresh",
+      "blurb":"Leader of the Branch Dividians",
+      "tags": [
+        "mass-murderer",
+        "cult leader"
+      ],
+      "epfeat": [
+        133,
+        274,
+        275
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Heinrich Himmler",
+      "blurb":"One of the architects of the Holocaust, head of the SS",
+      "tags": [
+        "mass-murderer",
+        "occultist",
+        "historical figure"
+      ],
+      "epfeat": [
+        158,
+        349,
+        350
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Aleister Crowley",
+      "blurb":"The Great Beast 666: Left-Hand Path magician and cum aficionado",
+      "tags": [
+        "occultist",
+        "historical figure"
+      ],
+      "epfeat": [
+        55,
+        158,
+        261,
+        324
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Jack Parsons",
+      "blurb":"Rocket scientist at JPL and enthusiastic ritual magic user",
+      "tags": [
+        "scientist",
+        "historical figure"
+      ],
+      "epfeat": [
+        261,
+        324
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"L. Ron Hubbard",
+      "blurb":"Sci-fi author and founder of Scientology",
+      "tags": [
+        "flim-flam man",
+        "cult leader",
+        "occultist"
+      ],
+      "epfeat": [
+        261,
+        262,
+        263,
+        264,
+        324
+      ],
+      "epment": [
+
+      ]
+    },
+    {
+      "name":"Albert Bender",
+      "blurb":"Ufologist who is partially responsible for the modern Man in Black",
+      "tags": [
+        "ufologist"
+      ],
+      "epfeat": [
+        323,
+        324
+      ],
+      "epment": [
+
+      ]
+    },
+    {
       "name":"",
       "blurb":"",
       "tags": [
