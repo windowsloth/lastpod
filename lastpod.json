@@ -320,6 +320,20 @@
       "epment": [
 
       ]
+    },
+    {
+      "name":"Whitley Strieber",
+      "blurb":"Famous abductee, author of Contact",
+      "tags": [
+        "alien abductee"
+      ],
+      "epfeat": [
+        72,
+        134
+      ],
+      "epment": [
+
+      ]
     }
   ]
 }
