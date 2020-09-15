@@ -17,7 +17,6 @@ for (let person of data) {
   }
 }
 
-let full;
 let fullx = 0;
 let fully = 0;
 // let s = 600 / w;
@@ -29,15 +28,16 @@ function setup() {
   // full = createGraphics(w, h);
   imageMode(CENTER);
   colorMode(RGB, 255, 255, 255, 1);
-  noLoop();
+  // noLoop();
   createCanvas(600, 600);
   background(255);
   stroke(0);
   fill(0);
   strokeWeight(2);
 
-  scaleslider = createSlider(1, 3, s, .01);
-  scaleslider.position(300, 700);
+  scaleslider = createSlider(.5, 3.5, s, .01);
+  scaleslider.position(250, 624);
+  scaleslider.style('width', '100px');
 
   drawDots(data);
 }
@@ -45,14 +45,12 @@ let orgx = 0;
 let orgy = 0;
 function draw() {
   clear();
-  // scale(s);
-  // drawDots(data);
   translate((w / 2) + fullx, (h / 2) + fully);
-  noStroke();
-  fill(0, 255, 0, .15);
-  circle(0, 0, s * w * .3);
-  circle(0, 0, s * w * .6);
-  circle(0, 0, s * w);
+  // noStroke();
+  // fill(0, 255, 0, .15);
+  // circle(0, 0, s * w * .3);
+  // circle(0, 0, s * w * .6);
+  // circle(0, 0, s * w);
   for (let person of data) {
     person.constodraw = [];
     for (let con of person.cons) {
@@ -64,9 +62,7 @@ function draw() {
   }
   for (let person of data) {
     labelDots(person);
-    // console.log(s);
   }
-  // clear();
   s = scaleslider.value();
 
   if (
@@ -78,9 +74,32 @@ function draw() {
   ) {
     fullx = fullx + (mouseX - orgx);
     fully = fully + (mouseY - orgy);
+    if (fullx > width * .6 * s) {
+      fullx = width * .6 * s;
+    } else if (fullx < width * -.6 * s) {
+      fullx = width * -.6 * s;
+    } else if (fully > height * .6 * s) {
+      fully = height * .6 * s;
+    } else if (fully < height * -.6 * s) {
+      fully = height * -.6 * s;
+    }
   }
   orgx = mouseX;
   orgy = mouseY;
+}
+
+function mouseWheel(event) {
+  if (
+    mouseX > 0 &&
+    mouseY > 0 &&
+    mouseX < width &&
+    mouseY < height &&
+    s + event.delta > .5 &&
+    s + event.delta < 3.5
+  ) {
+    s += event.delta * .5;
+    scaleslider.value(s);
+  }
 }
 
 function drawDots(arr) {
