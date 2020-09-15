@@ -1,6 +1,6 @@
 # lastpod
 
-Building a digital cordboard of red thread. Starting with just a raw JSON file and expanding from there.
+Building a digital corkboard of red thread. Starting with just a raw JSON file and expanding from there.
 
 People cataloged as follows:
 
