@@ -26,9 +26,9 @@ As of writing, all people/groups featured are stored as Javascript objects with 
 ```
 
 These elements are hopefully relatively self explanatory, but to clarify:
-> ``` id ``` an ID number for this particular "pin" on the "cork board"
-> ``` name ``` refers to the name of the person/organization in question
-> ``` nickname ``` is an alternate (ideally shorter) name, used for when the map is zoomed out
-> ``` blurb ``` is a description. In theory, this will be displayed when a particular "pin" on the chart is clicked on
-> ``` cons ``` are the ``` id ```s of other pins that the pin in question should be connected to
-> ``` epfeat ``` are episodes where this person/organization is featured
+* ``` id ``` an ID number for this particular "pin" on the "cork board"
+* ``` name ``` refers to the name of the person/organization in question
+* ``` nickname ``` is an alternate (ideally shorter) name, used for when the map is zoomed out
+* ``` blurb ``` is a description. In theory, this will be displayed when a particular "pin" on the chart is clicked on
+8 ``` cons ``` are the ``` id ```s of other pins that the pin in question should be connected to
+* ``` epfeat ``` are episodes where this person/organization is featured
