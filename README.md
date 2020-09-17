@@ -12,7 +12,11 @@ Since I had a lot of free time thanks to the COVID lockdown in NYC, and I was al
 
 ## Method
 
-As of writing, all people/groups featured are stored as Javascript objects with the following elements:
+Here is a (relatively) brief overview on how this was put together:
+
+### i. Data
+
+As of writing, all people/groups featured are stored as Javascript objects. I think of each of these objects as a "pin" in the corkboard. In real life those pins would be holding the thread in place, along with newspaper clippings and blurry photographs. In this case, each "pin" holds the following elements:
 
 ```javascript
 {
@@ -26,9 +30,24 @@ As of writing, all people/groups featured are stored as Javascript objects with 
 ```
 
 These elements are hopefully relatively self explanatory, but to clarify:
-* ``` id ``` an ID number for this particular "pin" on the "cork board"
+* ``` id ``` an ID number for this particular pin
 * ``` name ``` refers to the name of the person/organization in question
 * ``` nickname ``` is an alternate (ideally shorter) name, used for when the map is zoomed out
-* ``` blurb ``` is a description. In theory, this will be displayed when a particular "pin" on the chart is clicked on
+* ``` blurb ``` is a description. In theory, this will be displayed when a particular pin is clicked on
 * ``` cons ``` are the ``` id ```s of other pins that the pin in question should be connected to
 * ``` epfeat ``` are episodes where this person/organization is featured
+
+Originally, ``` epfeat ``` was used to draw connections, but this created problems as the chart got larger. For example, Bill Cooper is connected to MJ12 and to Stanton Freidman, but he isn't directly connected to Eisenhower, Nelson Rockfeller, or Valiant Thor. But, since every one of those is discussed in Bill Cooper Part 2 we wind up drawing lines straight from Bill Cooper to Eisenhower, when in reality it should be Bill Cooper > MJ12 > Eisenhower. My original thinking was that just cataloging episode numbers would be easier to keep track of, but I realized that when I was re-listening to episodes and taking notes I would write down the names of the people I wanted to connect anyway so it's not like writing those into the data structure directly would be that much more effort. It also saves a lot of steps later down the line, since I no longer needed to filter the different arrays of ``` epfeat ``` to find overlaps for every single pin.
+
+A few additional elements are added to each pin object when the chart is generated, but that is done procedurally so I haven't included them in this part of the overview.
+
+### ii. Distribution
+
+This is subject to change, but I am relatively happy with the current way the pins get distributed. Currently, the positions are recalculated each time the page runs, which I think adds an element of chaos to the whole thing, and in my opinion that's kinda fun.
+
+The positions aren't entirely random, since that made the charts ugly and difficult to follow. Instead, they are distributed so that pins that have more connections weighted more towards center of the chart, and pins with less pushed out towards the edges. The highest number of connections is calculated, and each pin gets a ``` score ``` element that stores that pin's percentage of the highest number of connections. These ``` score ```s are then split across a handful of zones, which are just concentric circles around the center of the chart.
+
+The positions of the pins are then generated using an algorithm similar to poisson disc distribution: a random angle around the center point is caluclated, a distance from the center is chosen based on the zone the pin is assigned to, and the surrounding area is checked to make sure the pin will not fall too close to any other pins. If, after a set number of attempts no position is found that satisfies the criteria, the pin is pushed out to the next zone. Once a suitable position is found, a ``` pos ``` elemetn is added to that pin's data. I am fairly happy with the patterns that this creates, but I am still tweaking this method to try and get the best possible results.
+
+### iii. Drawing Connections
+
