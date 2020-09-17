@@ -1,5 +1,6 @@
 const data = [
   {
+    "id": 0,
     "name": "Walter Freeman",
     "nickname": "Freeman",
     "blurb": "Invented and popularized the lobotomy",
@@ -8,17 +9,15 @@ const data = [
       "scientist",
       "historical figure"
     ],
+    "cons": [3, 7],
     "epfeat": [
       413,
       414,
-      70320,
-      "Trap!"
-    ],
-    "epment": [
-
+      70320
     ]
   },
   {
+    "id": 1,
     "name": "Allen Dulles",
     "nickname": "Dulles",
     "blurb": "Infamous former CIA director",
@@ -26,16 +25,14 @@ const data = [
       "spook",
       "historical figure"
     ],
+    "cons": [7, 28],
     "epfeat": [
       404,
-      413,
-      "Trap!"
-    ],
-    "epment": [
-
+      413
     ]
   },
   {
+    "id": 2,
     "name": "Helena Blavatsky",
     "nickname": "HPB",
     "blurb": "Extremely influential early 20th century occultist",
@@ -44,33 +41,31 @@ const data = [
       "theosophist",
       "spiritualist"
     ],
+    "cons": [4, 13],
     "epfeat": [
       157,
       158,
       410,
       411,
       412
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 3,
     "name":"Aleš Hrdlička",
     "nickname": "Hrdlička",
     "blurb":"Anthropologist, curator at the Smithsonian",
     "tags": [
       "scientist"
     ],
+    "cons": [0],
     "epfeat": [
       406,
       413
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 4,
     "name":"Adolph Hitler",
     "nickname": "Hitler",
     "blurb":"Leader of the Nazi Party, needs no introduction",
@@ -78,18 +73,17 @@ const data = [
       "mass-murderer",
       "historical figure"
     ],
+    "cons": [5, 13],
     "epfeat": [
       157,
       158,
       348,
       349,
       350
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 5,
     "name":"Joseph Mengele",
     "nickname": "Mengele",
     "blurb":"Nazi doctor at Auschwitz, real life mad scientist",
@@ -98,18 +92,17 @@ const data = [
       "scientist",
       "historical figure"
     ],
+    "cons": [4, 13],
     "epfeat": [
       216,
       217,
       348,
       349,
       350
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 6,
     "name":"Stanton T. Friedman",
     "nickname": "Friedman",
     "blurb":"Nuclear physicist and ufologist, uncovered the Majesty 12 papers",
@@ -117,6 +110,7 @@ const data = [
       "ufologist",
       "scientist"
     ],
+    "cons": [24],
     "epfeat": [
       169,
       170,
@@ -124,18 +118,17 @@ const data = [
       217,
       293,
       294
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 7,
     "name":"John F. Kennedy",
     "nickname": "JFK",
     "blurb":"35th President of the US",
     "tags": [
       "historical figure"
     ],
+    "cons": [0, 1, 28],
     "epfeat": [
       400,
       401,
@@ -144,12 +137,10 @@ const data = [
       404,
       405,
       70320
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 8,
     "name":"Betty & Barney Hill",
     "nickname": "Hill",
     "blurb":"First major abduction case",
@@ -157,6 +148,7 @@ const data = [
       "alien contacee/witness",
       "abductee"
     ],
+    "cons": [29],
     "epfeat": [
       169,
       170
@@ -166,21 +158,21 @@ const data = [
     ]
   },
   {
+    "id": 9,
     "name":"Bill Cooper",
     "nickname": "Cooper",
     "blurb":"Radio host and OG conspiracy theorist",
     "tags": [
 
     ],
+    "cons": [24],
     "epfeat": [
       293,
       294
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 10,
     "name":"J. Allen Hynek",
     "nickname": "Hynek",
     "blurb":"Ufologist who began as a skeptic working on Project Blue Book",
@@ -188,31 +180,29 @@ const data = [
       "scientist",
       "spook"
     ],
+    "cons": [22],
     "epfeat": [
       305
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 11,
     "name":"Timothy McVeigh",
     "nickname": "McVeigh",
     "blurb":"Perpatrator of the Oklahoma City bombing",
     "tags": [
       "mass-murderer"
     ],
+    "cons": [],
     "epfeat": [
       274,
       275,
       276,
       293
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 12,
     "name":"David Koresh",
     "nickname": "Koresh",
     "blurb":"Leader of the Branch Dividians",
@@ -220,17 +210,16 @@ const data = [
       "mass-murderer",
       "cult leader"
     ],
+    "cons": [],
     "epfeat": [
       133,
       179,
       274,
       275
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 13,
     "name":"Heinrich Himmler",
     "nickname": "Himmler",
     "blurb":"One of the architects of the Holocaust, head of the SS",
@@ -239,16 +228,15 @@ const data = [
       "occultist",
       "historical figure"
     ],
+    "cons": [4, 5, 21],
     "epfeat": [
       158,
       349,
       350
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 14,
     "name":"Aleister Crowley",
     "nickname": "Crowley",
     "blurb":"The Great Beast 666: Left-Hand Path magician and cum aficionado",
@@ -256,6 +244,7 @@ const data = [
       "occultist",
       "historical figure"
     ],
+    "cons": [15, 21],
     "epfeat": [
       55,
       158,
@@ -263,12 +252,10 @@ const data = [
       199,
       261,
       324
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 15,
     "name":"Jack Parsons",
     "nickname": "Parsons",
     "blurb":"Rocket scientist at JPL and enthusiastic ritual magic user",
@@ -276,15 +263,14 @@ const data = [
       "scientist",
       "historical figure"
     ],
+    "cons": [14, 16, 27],
     "epfeat": [
       261,
       324
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 16,
     "name":"L. Ron Hubbard",
     "nickname": "LRH",
     "blurb":"Sci-fi author and founder of Scientology",
@@ -293,33 +279,31 @@ const data = [
       "cult leader",
       "occultist"
     ],
+    "cons": [15],
     "epfeat": [
       261,
       262,
       263,
       264,
       324
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 17,
     "name":"Albert Bender",
     "nickname": "Bender",
     "blurb":"Ufologist who is partially responsible for the modern Man in Black",
     "tags": [
       "ufologist"
     ],
+    "cons": [],
     "epfeat": [
       323,
       324
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 18,
     "name":"Joseph Smith",
     "nickname": "Smith",
     "blurb":"Founder of the Mormon Church, former grave robber",
@@ -329,6 +313,7 @@ const data = [
       "flim-flam man",
       "historical figure"
     ],
+    "cons": [],
     "epfeat": [
       378,
       379,
@@ -337,84 +322,137 @@ const data = [
       384,
       385,
       410
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 19,
     "name":"Whitley Strieber",
     "nickname": "Strieber",
-    "blurb":"Famous abductee, author of Contact",
+    "blurb":"Famous abductee, author of Communion",
     "tags": [
       "alien abductee"
     ],
+    "cons": [],
     "epfeat": [
       72,
       134,
       294
-    ],
-    "epment": [
-
     ]
   },
   {
+    "id": 20,
     "name":"Eric Harris & Dylan Klebold",
     "nickname": "Columbine Shooters",
     "blurb":"",
     "tags": [
       "mass murderer"
     ],
+    "cons": [],
     "epfeat": [
       178,
       179
-    ],
-    "epment":[
-
     ]
   },
   {
+    "id": 21,
     "name":"Michael Aquino",
     "nickname":"Aquino",
     "blurb":"Founder of the Temple of Set, worked on the MindWar Program",
     "tags": [
       "occultist, spook"
     ],
+    "cons": [14, 28],
     "epfeat": [
       118,
       199
-    ],
-    "epment":[
-
     ]
   },
   {
+    "id": 22,
     "name":"Jacques Vallée",
     "nickname":"Vallée",
     "blurb":"Ufologist, author, and scientist in various fields",
     "tags": [
       "scientist, ufologist"
     ],
+    "cons": [10],
     "epfeat": [
       293,
       305
-    ],
-    "epment":[
-
     ]
   },
   {
+    "id": 23,
     "name":"Travis Walton",
     "nickname":"Walton",
     "blurb":"Famous abductee, basis for the film Fire in the Sky",
     "tags": [
       "abductee"
     ],
+    "cons": [],
     "epfeat": [
       284
-    ],
-    "epment":[
-
     ]
+  },
+  {
+    "id": 24,
+    "name":"Majesty/Majestic 12",
+    "nickname":"MJ-12",
+    "blurb":"Shadowy organization somehow related to many UFO conspirancies",
+    "tags": [],
+    "cons": [26],
+    "epfeat": [
+      284
+    ]
+  },
+  {
+    "id": 25,
+    "name":"Ed Walters",
+    "nickname":"Walters",
+    "blurb":"Main figure in the Gulf Breeze UFO Incident",
+    "tags": [],
+    "cons":[26],
+    "epfeat": [
+      252,
+      253
+    ]
+  },
+  {
+    "id": 26,
+    "name":"Mutual UFO Network",
+    "nickname":"MUFON",
+    "blurb":"A UFO investigation organization",
+    "tags": [],
+    "cons":[24, 25],
+    "epfeat": [
+      253
+    ]
+  },
+  {
+    "id": 27,
+    "name":"National Aeronautics and Space Administration",
+    "nickname":"NASA",
+    "blurb":"Never a straight answer",
+    "tags": [],
+    "cons":[24, 25],
+    "epfeat": []
+  },
+  {
+    "id": 28,
+    "name":"Central Intelligence Agency",
+    "nickname":"CIA",
+    "blurb":"The US' infamous intelligence agency. Born out of the OSS",
+    "tags": [],
+    "cons":[1, 7, 24, 27],
+    "epfeat": []
+  },
+  {
+    "id": 29,
+    "name":"the Greys",
+    "nickname":"Greys",
+    "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look",
+    "tags": [],
+    "cons":[8, 24],
+    "epfeat": []
   }
 ];
