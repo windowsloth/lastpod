@@ -10,6 +10,16 @@ Early on in the spring/summer of 2020 (during the first episode on Walter Freema
 
 Since I had a lot of free time thanks to the COVID lockdown in NYC, and I was also experimenting with Javascript and p5.js as part of a plan to revamp my personal website, I though trying to map these connections might actually be a fun excersize. If nothing else, a way to practice working with data and user interfaces.
 
+## Important Notes
+
+You might look at the chart and think to yourself "hey, why isn't so-and-so on here?" Well, they're probably not on there for one of two reasons, depending on who it is you're looking for:
+
+1. **I just haven't gotten there.** The rogue's gallery of people included on the chart is being put together as I go back and listen to the back catalog of episodes. If there's a specific person missing, I probably just haven't gotten around to adding them, or I haven't taken notes on that episode yet. Unless...
+
+2. **They're a serial killer.** This may seem odd, since the Heavy Hitters are such a big part of the show, but I'm choosing not to include them for a few reasons. First of all, most of them are outliers. They typically don't share any connections with anyone else on the chart, so there's no point in including them. Secondly, when there are connections to someone on the chart, they're usually either totally tangential (like Ed Gein's fascination with Ilse Koch; it was a well documented interest of his, but it's hardly an actual connection, and if it were included it would wind up indirectly tying Gein to the rest of the Nazi's on the list which I don't think is really valid), or they're Obvious Bullshit. This is kind of arbitrary, but I think there is a distinction between Obvious Bullshit (like Ted Bundy actually being George Bush, which is mentioned as an aside on the Ted Bundy Part 2) and Fun Bullshit, like the Planet Serpo.
+
+There are a few instances where I am a still deliberating on whether someone should be included. At the time of writing, I have yet to decide if I want to include any of the Hand of Death connections covered in the Henry Lee Lucas series. Part of me thinks it should be included since there is an entire episode focusing on it, but part of me feels like it falls into Obvious Bullshit, especially considering Marcus, Henry, and Ben frame it as such in the episode. I am also torn on Robert Pickton; the whole secret clones facilities tangent does feel like it crosses the line into total lunacy, but I haven't quite decided.
+
 ## Method
 
 Here is a (relatively) brief overview on how this was put together:
