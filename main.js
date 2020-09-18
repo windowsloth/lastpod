@@ -112,6 +112,8 @@ function drawDots(arr) {
     // for (let con of person.cons) {
     //   person.constodraw.push(con);
     // }
+    const todraw = person.cons.slice(0, person.cons.length);
+    person.todraw = todraw;
     person.score = person.cons.length / most;
 
     if (person.score > .5) {
@@ -259,19 +261,31 @@ function findConnections(person) {
 }
 
 function connectDots(person) {
-  if (person.cons) {
-    for (connection of person.constodraw) {
-      let startx = person.pos[0] * s;
-      let starty = person.pos[1] * s;
-      let endx = connection.pos[0] * s;
-      let endy = connection.pos[1] * s;
-      stroke(255, 0, 0, 1);
-      strokeWeight(2);
-      line(startx, starty, endx, endy);
-      let delindex = connection.constodraw.indexOf(person);
-      connection.constodraw.splice(delindex, 1);
-    }
+  for (let con of person.todraw) {
+    let connection = data[con];
+    let startx = person.pos[0] * s;
+    let starty = person.pos[1] * s;
+    let endx = connection.pos[0] * s;
+    let endy = connection.pos[1] * s;
+    stroke(255, 0, 0, 1);
+    strokeWeight(2);
+    line(startx, starty, endx, endy);
+    let delindex = connection.todraw.indexOf(person.id);
+    connection.towdraw.splice(delindex, 1);
   }
+  // if (person.cons) {
+  //   for (connection of person.constodraw) {
+  //     let startx = person.pos[0] * s;
+  //     let starty = person.pos[1] * s;
+  //     let endx = connection.pos[0] * s;
+  //     let endy = connection.pos[1] * s;
+  //     stroke(255, 0, 0, 1);
+  //     strokeWeight(2);
+  //     line(startx, starty, endx, endy);
+  //     let delindex = connection.constodraw.indexOf(person);
+  //     connection.constodraw.splice(delindex, 1);
+  //   }
+  // }
 }
 
 function labelDots(person) {
