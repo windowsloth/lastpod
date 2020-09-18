@@ -165,7 +165,7 @@ const data = [
     "tags": [
 
     ],
-    "cons": [24],
+    "cons": [11, 24],
     "epfeat": [
       293,
       294
@@ -193,7 +193,7 @@ const data = [
     "tags": [
       "mass-murderer"
     ],
-    "cons": [],
+    "cons": [9],
     "epfeat": [
       274,
       275,
@@ -244,7 +244,7 @@ const data = [
       "occultist",
       "historical figure"
     ],
-    "cons": [15, 21],
+    "cons": [15, 16, 21],
     "epfeat": [
       55,
       158,
@@ -279,7 +279,7 @@ const data = [
       "cult leader",
       "occultist"
     ],
-    "cons": [15],
+    "cons": [14, 15],
     "epfeat": [
       261,
       262,
@@ -411,7 +411,7 @@ const data = [
     "nickname":"Walters",
     "blurb":"Main figure in the Gulf Breeze UFO Incident",
     "tags": [],
-    "cons":[26],
+    "cons":[26, 29],
     "epfeat": [
       252,
       253
@@ -443,7 +443,7 @@ const data = [
     "nickname":"CIA",
     "blurb":"The US' infamous intelligence agency. Born out of the OSS",
     "tags": [],
-    "cons":[1, 7, 24, 27],
+    "cons":[1, 7, 24, 27, 30],
     "epfeat": []
   },
   {
@@ -452,7 +452,16 @@ const data = [
     "nickname":"Greys",
     "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look",
     "tags": [],
-    "cons":[8, 24],
+    "cons":[8, 24, 25],
+    "epfeat": []
+  },
+  {
+    "id": 30,
+    "name":"NICAP",
+    "nickname":"NICAP",
+    "blurb":"National Investigations Comittee on Aerial Phenomena. A UFO research group",
+    "tags": [],
+    "cons":[28],
     "epfeat": []
   }
 ];
