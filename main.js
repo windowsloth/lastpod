@@ -11,7 +11,7 @@ for (let i = 0; i < cols * rows; i++) {
 const total = data.length;
 let most = 0;
 for (let person of data) {
-  findConnections(person);
+  // findConnections(person);
   if (person.cons.length > most) {
     most = person.cons.length
   }
