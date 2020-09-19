@@ -51,11 +51,14 @@ function draw() {
   // circle(0, 0, s * w * .3);
   // circle(0, 0, s * w * .6);
   // circle(0, 0, s * w);
+  // for (let person of data) {
+  //   person.constodraw = [];
+  //   for (let con of person.cons) {
+  //     person.constodraw.push(con);
+  //   }
+  // }
   for (let person of data) {
-    person.constodraw = [];
-    for (let con of person.cons) {
-      person.constodraw.push(con);
-    }
+    person.todraw = person.cons.slice(0, person.cons.length);
   }
   for (let person of data) {
     connectDots(person);
@@ -112,8 +115,10 @@ function drawDots(arr) {
     // for (let con of person.cons) {
     //   person.constodraw.push(con);
     // }
-    const todraw = person.cons.slice(0, person.cons.length);
-    person.todraw = todraw;
+    // const todraw = person.cons.slice(0, person.cons.length);
+    // person.todraw = todraw;
+    // person.todraw = person.cons.slice(0, person.cons.length);
+    // console.log(person.nickname+": " +person.todraw);
     person.score = person.cons.length / most;
 
     if (person.score > .5) {
@@ -270,8 +275,9 @@ function connectDots(person) {
     stroke(255, 0, 0, 1);
     strokeWeight(2);
     line(startx, starty, endx, endy);
-    let delindex = connection.todraw.indexOf(person.id);
-    connection.towdraw.splice(delindex, 1);
+    // let delindex = connection.todraw.indexOf(con);
+    // connection.todraw.splice(delindex, 1);
+    connection.todraw.splice(connection.todraw.indexOf(con), 1);
   }
   // if (person.cons) {
   //   for (connection of person.constodraw) {

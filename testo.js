@@ -41,7 +41,7 @@ const data = [
       "theosophist",
       "spiritualist"
     ],
-    "cons": [4, 13],
+    "cons": [4, 13, 18, 34],
     "epfeat": [
       157,
       158,
@@ -128,7 +128,7 @@ const data = [
     "tags": [
       "historical figure"
     ],
-    "cons": [0, 1, 28],
+    "cons": [0, 1, 24, 28],
     "epfeat": [
       400,
       401,
@@ -165,7 +165,7 @@ const data = [
     "tags": [
 
     ],
-    "cons": [11, 24],
+    "cons": [11, 22, 24],
     "epfeat": [
       293,
       294
@@ -210,7 +210,7 @@ const data = [
       "mass-murderer",
       "cult leader"
     ],
-    "cons": [],
+    "cons": [20],
     "epfeat": [
       133,
       179,
@@ -244,7 +244,7 @@ const data = [
       "occultist",
       "historical figure"
     ],
-    "cons": [15, 16, 21],
+    "cons": [15, 16, 17, 21, 34],
     "epfeat": [
       55,
       158,
@@ -296,7 +296,7 @@ const data = [
     "tags": [
       "ufologist"
     ],
-    "cons": [],
+    "cons": [14, 30],
     "epfeat": [
       323,
       324
@@ -313,7 +313,7 @@ const data = [
       "flim-flam man",
       "historical figure"
     ],
-    "cons": [],
+    "cons": [2],
     "epfeat": [
       378,
       379,
@@ -347,7 +347,7 @@ const data = [
     "tags": [
       "mass murderer"
     ],
-    "cons": [],
+    "cons": [12],
     "epfeat": [
       178,
       179
@@ -375,7 +375,7 @@ const data = [
     "tags": [
       "scientist, ufologist"
     ],
-    "cons": [10],
+    "cons": [9, 10],
     "epfeat": [
       293,
       305
@@ -389,7 +389,7 @@ const data = [
     "tags": [
       "abductee"
     ],
-    "cons": [],
+    "cons": [26, 30],
     "epfeat": [
       284
     ]
@@ -400,7 +400,7 @@ const data = [
     "nickname":"MJ-12",
     "blurb":"Shadowy organization somehow related to many UFO conspirancies",
     "tags": [],
-    "cons": [26],
+    "cons": [7, 26, 31, 33],
     "epfeat": [
       284
     ]
@@ -423,7 +423,7 @@ const data = [
     "nickname":"MUFON",
     "blurb":"A UFO investigation organization",
     "tags": [],
-    "cons":[24, 25],
+    "cons":[23, 24, 25],
     "epfeat": [
       253
     ]
@@ -434,7 +434,7 @@ const data = [
     "nickname":"NASA",
     "blurb":"Never a straight answer",
     "tags": [],
-    "cons":[24, 25],
+    "cons":[24, 28],
     "epfeat": []
   },
   {
@@ -452,7 +452,7 @@ const data = [
     "nickname":"Greys",
     "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look",
     "tags": [],
-    "cons":[8, 24, 25],
+    "cons":[8, 24, 25, 31],
     "epfeat": []
   },
   {
@@ -461,7 +461,43 @@ const data = [
     "nickname":"NICAP",
     "blurb":"National Investigations Comittee on Aerial Phenomena. A UFO research group",
     "tags": [],
-    "cons":[28],
+    "cons":[17, 23, 28],
+    "epfeat": []
+  },
+  {
+    "id": 31,
+    "name":"Dwight D. Eisenhower",
+    "nickname":"Eisenhower",
+    "blurb":"Former US President, signer of the Greada Treaty",
+    "tags": [],
+    "cons":[24, 29, 32],
+    "epfeat": []
+  },
+  {
+    "id": 32,
+    "name":"Valiant Thor",
+    "nickname":"Valiant Thor",
+    "blurb":"Venusian ambassador, member of the Secret Space Program. Has purple skin?",
+    "tags": [],
+    "cons":[31],
+    "epfeat": []
+  },
+  {
+    "id": 33,
+    "name":"J. Edgar Hoover",
+    "nickname":"Hoover",
+    "blurb":"Founder of the FBI. Villain of history",
+    "tags": [],
+    "cons":[24],
+    "epfeat": []
+  },
+  {
+    "id": 34,
+    "name":"Samuel Liddell MacGregor Mathers",
+    "nickname":"Mathers",
+    "blurb":"One of the founders of the Hermetic Order of the Golden Dawn",
+    "tags": [],
+    "cons":[2, 14],
     "epfeat": []
   }
 ];
