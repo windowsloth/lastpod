@@ -17,13 +17,14 @@
 * {
   /* background-color: ghostwhite; */
   /* color: rgba(251, 248, 248); */
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
+
 }
 html {
   /* background-color: rgba(55, 50, 50, 1); */
   background-color: rgba( 42, 38, 38, 1);
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 section {
   /* background-color: red; */
