@@ -34,7 +34,7 @@ section {
   align-items: center;
   /* align-content: center; */
   margin: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 header {
 

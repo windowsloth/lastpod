@@ -104,7 +104,7 @@ let globaltree;
   }
 
 function setup() {
-  noLoop();
+  // noLoop();
   // console.log($(document).width());
   //if ($(document).width() > 600) {
     w = windowWidth;
