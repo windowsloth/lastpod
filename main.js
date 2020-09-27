@@ -176,10 +176,10 @@ function draw() {
   }
 }
 
-function windowResize() {
-  w = windowWidth * .9;
-  resizeCanvas(w, h);
-}
+// function windowResize() {
+//   w = windowWidth * .9;
+//   resizeCanvas(w, h);
+// }
 
 function mouseClicked() {
   if (!handtool) {
