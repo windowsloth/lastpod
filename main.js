@@ -399,7 +399,7 @@ function labelDots(tree, person) {
       noStroke();
       fill(105);
       textSize(24)
-      textFont('Hungry');
+      textFont('Medium');
       // fill(255, 0, 0, 1);
       // stroke(255, 0, 0, 1);
       // strokeWeight(3);
@@ -411,7 +411,7 @@ function labelDots(tree, person) {
       fill(105);
       circle(posx, posy, 5);
       textSize(24);
-      textFont('Hungry');
+      textFont('Medium');
       text(name, posx, posy + 18);
     }
   }

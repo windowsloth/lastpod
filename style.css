@@ -6,6 +6,14 @@
   font-family: "Hungry";
     src: url("./HungryPro.otf") format("opentype");
 }
+@font-face {
+  font-family: "Medium";
+    src: url("./m5x7.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Large";
+    src: url("./m6x11.ttf") format("truetype");
+}
 * {
   background-color: ghostwhite;
   color: dimgray;
@@ -23,7 +31,7 @@ section {
 }
 h1, h2 {
   flex:100%;
-  font-family: "Futile", sans-serif;
+  font-family: "Medium", sans-serif;
   text-align: center;
   margin: auto;
   /* padding: 1em; */
@@ -37,7 +45,7 @@ h1 {
                  -2px 6px red; */
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   /* text-shadow: 1px -1px red,
                -1px -1px red,
                1px 3px red,
@@ -62,6 +70,8 @@ button {
   cursor: pointer;
 }
 p {
+  font-family: 'Medium', serif;
+  font-size: 1.5em;
   color: dimgray;
   text-align: left justify;
   padding: 1em;
@@ -79,13 +89,13 @@ p {
   /* border: 2em solid ghostwhite; */
   padding: 1em;
   border-radius: .5em;
-  box-shadow: inset .5em .5em 1em rgba(105, 105, 105, .1),
-            inset -.5em -.5em 2em rgba(248, 248, 255, 1);
+  /* box-shadow: inset .5em .5em 1em rgba(105, 105, 105, .1),
+            inset -.5em -.5em 2em rgba(248, 248, 255, 1); */
 }
 .label {
   /* background: red; */
   font-size: 1.25em;
-  font-family: "Futile", serif;
+  font-family: "Large", serif;
   padding: 0 3em 0 3em;
 }
 .active {
