@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Futile";
+    src: url("./FutilePro.otf") format("opentype");
+}
+@font-face {
+  font-family: "Hungry";
+    src: url("./HungryPro.otf") format("opentype");
+}
+* {
+  background-color: ghostwhite;
+  color: dimgray;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+section {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* align-content: center; */
+  margin: auto;
+}
+h1, h2 {
+  flex:100%;
+  font-family: "Futile", sans-serif;
+  text-align: center;
+  margin: auto;
+  /* padding: 1em; */
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    /* text-shadow: 2px -2px red,
+                 -2px -2px red,
+                 2px 6px red,
+                 -2px 6px red; */
+}
+h2 {
+  font-size: 1.5em;
+  /* text-shadow: 1px -1px red,
+               -1px -1px red,
+               1px 3px red,
+               -1px 3px red; */
+}
+nav {
+  flex: 100%;
+  margin: auto;
+  text-align: center;
+}
+button {
+  position: relative;
+  top: -1em;
+  left: -1em;
+  background-color: transparent;
+  padding: .5em;
+  width: 2em;
+  height: 2em;
+  /* padding: .1em; */
+  border:none;
+  /* border-radius: 100%; */
+  cursor: pointer;
+}
+p {
+  color: dimgray;
+  text-align: left justify;
+  padding: 1em;
+}
+#container {
+
+}
+#selectedpins {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.main {
+  /* border: 2em solid ghostwhite; */
+  padding: 1em;
+  border-radius: .5em;
+  box-shadow: inset .5em .5em 1em rgba(105, 105, 105, .1),
+            inset -.5em -.5em 2em rgba(248, 248, 255, 1);
+}
+.label {
+  /* background: red; */
+  font-size: 1.25em;
+  font-family: "Futile", serif;
+  padding: 0 3em 0 3em;
+}
+.active {
+  background: red;
+}
+.notactive {
+  background: transparent;
+}
+.pin {
+  width: 250px;
+  margin: 2em;
+  padding: 1em;
+  border-radius: .5em;
+  box-shadow: -.25em -.25em 2em 0 rgba(0, 0, 0, .05),
+              .25em .25em 2em 0 rgba(0, 0, 0, .05);
+  /* box-s
+  .mhadow: 0 0 0 2px white; */
+}
+.name {
+  margin-top: -1em;
+}

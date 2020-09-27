@@ -4,13 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Testing Grounds</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <link href="./style.css" rel="stylesheet"></link>
+    <script
+		  src="https://code.jquery.com/jquery-3.5.1.js"
+		  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		  crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <script src="./testo.js"></script>
     <script src="./main.js"></script>
+    <!-- <script src="./controls.js"></script> -->
     <script>
-
+      $(document).ready(function() {
+        // console.log($(document).width());
+        $('#handtool').click(function() {
+          handtool = !handtool;
+          if (handtool) {
+            $(this).attr('class', 'active');
+          } else {
+            $(this).attr('class', 'not-active');
+          }
+        });
+        $('#zoomslider').change(function () {
+          s = $('#zoomslider').val();
+        });
+        // $('#close').on("close", function() {
+        //   console.log('hello!');
+        // });
+      });
     </script>
   </head>
   <body>
+    <section>
+    <h1>unofficial last podcast network</h1>
+    <p>(of conspiracies)</p>
+    </section>
+    <section>
+    <div class="main">
+      <div id='container'>
+      </div>
+      <nav>
+        <label class= "label">
+          HAND TOOL:
+          <input
+            type="checkbox"
+            id="handtool"
+            title="Use the hand tool to move around the diagram"
+          >
+        </label>
+
+        <label class= "label">
+          ZOOM:
+          <input
+            type="range"
+            id="zoomslider"
+            name="zoom"
+            min=".5"
+            max="4"
+            vale-"1"
+            step=".01"
+            title="Use this slider to zoom in and out"
+          ></input>
+        </label>
+      </nav>
+    </div>
+    </section>
+    <section>
+      <h2>Selected:</h2>
+      <div id="selectedpins">
+      </div>
+    </section>
   </body>
 </html>

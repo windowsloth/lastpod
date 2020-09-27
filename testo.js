@@ -73,7 +73,7 @@ const data = [
       "mass-murderer",
       "historical figure"
     ],
-    "cons": [5, 13],
+    "cons": [2, 5, 13],
     "epfeat": [
       157,
       158,
@@ -193,7 +193,7 @@ const data = [
     "tags": [
       "mass-murderer"
     ],
-    "cons": [9],
+    "cons": [9, 12, 35],
     "epfeat": [
       274,
       275,
@@ -210,7 +210,7 @@ const data = [
       "mass-murderer",
       "cult leader"
     ],
-    "cons": [20],
+    "cons": [11, 20, 35],
     "epfeat": [
       133,
       179,
@@ -361,7 +361,7 @@ const data = [
     "tags": [
       "occultist, spook"
     ],
-    "cons": [14, 28],
+    "cons": [13, 14, 28],
     "epfeat": [
       118,
       199
@@ -396,11 +396,11 @@ const data = [
   },
   {
     "id": 24,
-    "name":"Majesty/Majestic 12",
+    "name":"Majestic 12",
     "nickname":"MJ-12",
-    "blurb":"Shadowy organization somehow related to many UFO conspirancies",
+    "blurb":"Shadowy organization somehow related to many UFO conspirancies. Also known as Majesty 12",
     "tags": [],
-    "cons": [7, 26, 31, 33],
+    "cons": [6, 7, 9, 26, 27, 28, 29, 31, 33],
     "epfeat": [
       284
     ]
@@ -434,7 +434,7 @@ const data = [
     "nickname":"NASA",
     "blurb":"Never a straight answer",
     "tags": [],
-    "cons":[24, 28],
+    "cons":[15, 24, 28],
     "epfeat": []
   },
   {
@@ -443,7 +443,7 @@ const data = [
     "nickname":"CIA",
     "blurb":"The US' infamous intelligence agency. Born out of the OSS",
     "tags": [],
-    "cons":[1, 7, 24, 27, 30],
+    "cons":[1, 7, 21, 24, 27, 30],
     "epfeat": []
   },
   {
@@ -452,7 +452,7 @@ const data = [
     "nickname":"Greys",
     "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look",
     "tags": [],
-    "cons":[8, 24, 25, 31],
+    "cons":[8, 24, 25, 31, 36, 37],
     "epfeat": []
   },
   {
@@ -488,7 +488,7 @@ const data = [
     "nickname":"Hoover",
     "blurb":"Founder of the FBI. Villain of history",
     "tags": [],
-    "cons":[24],
+    "cons":[24, 35],
     "epfeat": []
   },
   {
@@ -499,5 +499,42 @@ const data = [
     "tags": [],
     "cons":[2, 14],
     "epfeat": []
-  }
+  },
+  {
+    "id": 35,
+    "name":"Federal Bureau of Investigations",
+    "nickname":"FBI",
+    "blurb":"US domestic intelligence agency",
+    "tags": [],
+    "cons":[11, 12, 33],
+    "epfeat": []
+  },
+  {
+    "id": 36,
+    "name":"Dulce Base",
+    "nickname":"Dulce",
+    "blurb":"Top secret intergalactic underground research base in New Mexico",
+    "tags": [],
+    "cons":[29, 38],
+    "epfeat": []
+  },
+  {
+    "id": 37,
+    "name":"Reptilians",
+    "nickname":"Reptilians",
+    "blurb":"Aggresive, malevolent aliens. Exact motivations vary depending on who you ask",
+    "tags": [],
+    "cons":[29, 36],
+    "epfeat": []
+  },
+  {
+    "id": 38,
+    "name":"Los Alamos National Lab",
+    "nickname":"Los Alamos",
+    "blurb":"Laboratory that was the home base for the Manhattan Project",
+    "tags": [],
+    "cons":[36],
+    "epfeat": []
+  },
+
 ];
