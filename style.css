@@ -157,7 +157,9 @@ p {
   top: -1em;
   left: -1em;
   color: rgba(247, 230, 230, 1);
-  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5);
+  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
+              .1em .1em 0 .05em rgba(255, 92, 73, 1),
+              inset .75em 1em 1em -1em rgba(255, 128, 108, 1);
 }
 .info {
   height: 150px;
