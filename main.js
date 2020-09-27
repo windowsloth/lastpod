@@ -2,7 +2,7 @@
 //DANIEL LINSEN
 let w = 600;
 let h = 600;
-const cellsize = 15;
+const cellsize = 10;
 const cols = w / cellsize;
 const rows = h / cellsize;
 let grid = [];
@@ -103,20 +103,15 @@ let globaltree;
     }
   }
 
-  let regular, bold;
-  // function preload() {
-  //   hungry = loadFont('./HungryPro.otf');
-  //   small = loadFont('./m3x6.ttf');
-  //   // regular = loadFont('./B612Mono-Regular.ttf');
-  //   // bold = loadFont('../B612Mono-Bold.ttf');
-  // }
 function setup() {
-  console.log($(document).width());
-  w = windowWidth * .9;
+  // console.log($(document).width());
+  //if ($(document).width() > 600) {
+    w = windowWidth;
+  //}
   // h = $(document).height() * 5;
   const canvas = createCanvas(w, h);
   canvas.parent('container');
-  background(0);
+  // background(255);
   colorMode(RGB, 255, 255, 255, 1);
   drawDots(data);
   for (let person of data) {
@@ -127,7 +122,7 @@ function setup() {
   }
 }
 function draw() {
-  $('button').click(function() {
+  $('.close').click(function() {
     let pinid = $(this).parent().attr('id');
     $('#' + pinid).remove();
     data[pinid].sel=false;
@@ -149,11 +144,11 @@ function draw() {
     let y2 = connection.b.pos[1] * s;
     if (connection.a.sel || connection.b.sel) {
       strokeWeight(2);
-      stroke(255, 0, 0, 1);
+      stroke(170, 35, 31, 1);
       line(x1, y1, x2, y2);
     } else {
       strokeWeight(1);
-      stroke(0, 0, 0, .15);
+      stroke(246, 243, 243, .25);
       line(x1, y1, x2, y2);
     }
   }
@@ -224,8 +219,25 @@ function currentblock(qtree) {
           my < (person.pos[1] * s) + 15
         ) {
           noStroke();
-          fill(0, 255, 0, .25);
-          circle(person.pos[0] * s, person.pos[1] * s, 50);
+          fill(255, 176, 0, 1);
+          circle(person.pos[0] * s, person.pos[1] * s, 7);
+          for (let id of person.cons) {
+            strokeWeight(2);
+            stroke(255, 176, 0, 1);
+            line(
+              person.pos[0] * s, person.pos[1] * s,
+              data[id].pos[0] * s, data[id].pos[1] * s
+            );
+            fill(254, 97, 0, 1);
+            noStroke();
+            if (s < 1.5) {
+              let name = person.nickname;
+              text(name, person.pos[0] * s, person.pos[1] * s + 18);
+            } else {
+              let name = person.name;
+              text(name, person.pos[0] * s, person.pos[1] * s + 18);
+            }
+          }
           cursor('pointer');
         }
       });
@@ -259,11 +271,18 @@ function selectperson(qtree) {
           if (person.sel) {
             $("#selectedpins").append(`
               <div id='` + person.id + `' class='pin'>
-                <button id='close'>	&#128473; </button>
+                <button class='close'>	&#128473; </button>
                 <h2 class='name'>` + person.name + `</h2>
-                <p>` + person.blurb + `</p>
+                <div class='info'>
+                  <p>` + person.blurb + `</p>
+                </div>
               </div>
             `);
+            // for (let ep of person.epfeat) {
+            //   $('.eps').append(`
+            //     <li>` + ep + `</li>
+            //   `);
+            // }
           } else {
             $("#" + person.id).remove();
           }
@@ -295,9 +314,6 @@ drawDots = function(arr) {
     person.score = person.cons.length / most;
     stickPin(person, person.score);
   }
-  // for (let person of arr) {
-  //   connectDots(person);
-  // }
 }
 
 function stickPin(person, score) {
@@ -305,6 +321,7 @@ function stickPin(person, score) {
   let success = false;
   for (let i = 0; i < k; i++) {
     let a = random(TWO_PI);
+    // console.log(a);
     let terma = (w * w) * pow(sin(a), 2);
     let termb = (h * h) * pow(cos(a), 2);
     let rad = ((w * h) / sqrt(terma + termb)) / 2;
@@ -340,7 +357,7 @@ function stickPin(person, score) {
     }
   }
   if (!success) {
-    stickPin(person, (person.cons.length + 1) / length)
+    stickPin(person, (person.cons.length + 2) / length)
   }
 }
 
@@ -378,8 +395,8 @@ function labelDots(tree, person) {
   if (
     posx > -(w / 2) - fullx &&
     posx < (w / 2) - fullx &&
-    posy > -(w / 2) - fully &&
-    posy < (w / 2) - fully
+    posy > -(h / 2) - fully &&
+    posy < (h / 2) - fully
   ) {
     tree.insert(person);
     if (s < 1.5) {
@@ -391,14 +408,12 @@ function labelDots(tree, person) {
     fill(105);
     textAlign(CENTER);
     if (person.sel) {
-      strokeWeight(2);
-      stroke(255, 0, 0);
-      fill(255, 0, 0, 1);
+      fill(230, 35, 37, 1);
       // fill(0);
       circle(posx, posy, 5);
       noStroke();
-      fill(105);
-      textSize(24)
+      fill(252, 206, 199, 1);
+      textSize(24);
       textFont('Medium');
       // fill(255, 0, 0, 1);
       // stroke(255, 0, 0, 1);
@@ -408,7 +423,7 @@ function labelDots(tree, person) {
       text(name, posx, posy + 18);
     } else {
       // stroke(255);
-      fill(105);
+      fill(249, 246, 246, 1);
       circle(posx, posy, 5);
       textSize(24);
       textFont('Medium');
