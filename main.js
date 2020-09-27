@@ -186,6 +186,7 @@ function mouseReleased() {
   if (!handtool) {
     selectperson(globaltree);
   }
+  return false;
 };
 
 function mouseDragged() {
