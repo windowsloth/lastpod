@@ -182,7 +182,7 @@ function draw() {
 //   resizeCanvas(w, h);
 // }
 
-function mouseClicked() {
+function mouseReleased() {
   if (!handtool) {
     selectperson(globaltree);
   }
