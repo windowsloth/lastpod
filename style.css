@@ -25,6 +25,7 @@ html {
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 section {
   /* background-color: red; */
@@ -34,7 +35,7 @@ section {
   align-items: center;
   /* align-content: center; */
   margin: auto;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 header {
 
