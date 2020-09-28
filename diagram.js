@@ -18,6 +18,9 @@ for (let person of data) {
 }
 let strings = [];
 
+let handtool = false;
+let globaltree;
+
 function setup() {
   colorMode(RGB, 255, 255, 255, 1);
   w = windowWidth;
@@ -154,5 +157,14 @@ function labelDots(tree, person) {
       circle(posx, posy, 5);
       text(name, posx, posy + 18);
     }
+  }
+}
+
+function mouseDragged() {
+  if (handtool) {
+    cursor('grabbing');
+    fullx += mouseX - pmouseX;
+    fully += mouseY - pmouseY;
+    return false;
   }
 }
