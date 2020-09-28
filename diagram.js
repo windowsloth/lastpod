@@ -215,5 +215,4 @@ function mouseReleased() {
   if (!handtool) {
     selectPerson(globaltree);
   }
-  return false;
 }
