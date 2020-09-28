@@ -23,6 +23,9 @@ function setup() {
   const canvas = createCanvas(w, h);
   canvas.parent('container');
   drawDots(data);
+  for (let person of data) {
+    connectDots(person);
+  }
 }
 
 function draw() {
@@ -82,5 +85,20 @@ function stickPin(person, score) {
   }
   if (!success) {
     stickPin(person, (person.cons.length + 2) / length)
+  }
+}
+function connectDots(person) {
+  for (let con of person.todraw) {
+    let connection = data[con];
+    let startx = person.pos[0] * s;
+    let starty = person.pos[1] * s;
+    let endx = connection.pos[0] * s;
+    let endy = connection.pos[1] * s;
+    data[con].todraw.splice(data[con].todraw.indexOf(person.id), 1);
+    let result = {
+      a: person,
+      b: connection
+    }
+    strings.push(result);
   }
 }
