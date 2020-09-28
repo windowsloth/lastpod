@@ -1,6 +1,8 @@
 let w;
 let h = 600;
-
+const cellsize = 10;
+const cols = w / cellsize;
+const rows = h / cellsize;
 const grid=[];
 
 let total = data.length;
