@@ -57,6 +57,7 @@ function draw() {
   for (let person of data) {
     labelDots(tree, person);
   }
+  globaltree = tree;
 }
 
 function drawDots(arr) {
@@ -160,6 +161,48 @@ function labelDots(tree, person) {
   }
 }
 
+function selectPerson(qtree) {
+  let mx = mouseX - ((w / 2) + fullx);
+  let my = mouseY - ((h / 2) + fully);
+  if (qtree.subdivided) {
+    selectPerson(qtree.northwest);
+    selectPerson(qtree.northeast);
+    selectPerson(qtree.southwest);
+    selectPerson(qtree.southeast);
+  } else {
+    if (
+      mx > qtree.bounds.x &&
+      mx < qtree.bounds.x + qtree.bounds.w &&
+      my > qtree.bounds.y &&
+      my < qtree.bounds.y + qtree.bounds.h
+    ) {
+      qtree.points.forEach(person => {
+        if (
+          mx > (person.pos[0] * s) - 15 &&
+          mx < (person.pos[0] * s) + 15 &&
+          my > (person.pos[1] * s) - 15 &&
+          my < (person.pos[1] * s) + 15
+        ) {
+          person.sel = !person.sel;
+          if (person.sel) {
+            $("#selectedpins").append(`
+              <div id='` + person.id + `' class='pin'>
+                <button class='close'>	&#128473; </button>
+                <h2 class='name'>` + person.name + `</h2>
+                <div class='info'>
+                  <p>` + person.blurb + `</p>
+                </div>
+              </div>
+            `);
+          } else {
+            $("#" + person.id).remove();
+          }
+        }
+      });
+    }
+  }
+}
+
 function mouseDragged() {
   if (handtool) {
     cursor('grabbing');
@@ -167,4 +210,10 @@ function mouseDragged() {
     fully += mouseY - pmouseY;
     return false;
   }
+}
+function mouseReleased() {
+  if (!handtool) {
+    selectPerson(globaltree);
+  }
+  return false;
 }
