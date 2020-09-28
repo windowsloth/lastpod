@@ -5,6 +5,8 @@ let cols, rows;
 let grid=[];
 
 let s = 1;
+let fullx = 0;
+let fully = 0;
 
 let total = data.length;
 let most = 0;
@@ -17,6 +19,7 @@ for (let person of data) {
 let strings = [];
 
 function setup() {
+  colorMode(RGB, 255, 255, 255, 1);
   w = windowWidth;
   cols = w / cellsize;
   rows = h / cellsize;
@@ -30,8 +33,27 @@ function setup() {
 
 function draw() {
   clear();
+  translate((w / 2) + fullx, (h / 2) + fully);
   const boundary = new Block(-w / 2, -h / 2, w, h);
   let tree = new Quadtree(boundary, 4);
+  for (let connection of strings) {
+    let x1 = connection.a.pos[0] * s;
+    let y1 = connection.a.pos[1] * s;
+    let x2 = connection.b.pos[0] * s;
+    let y2 = connection.b.pos[1] * s;
+    if (connection.a.sel || connection.b.sel) {
+      strokeWeight(2);
+      stroke(170, 35, 31, 1);
+      line(x1, y1, x2, y2);
+    } else {
+      strokeWeight(1);
+      stroke(246, 243, 243, .25);
+      line(x1, y1, x2, y2);
+    }
+  }
+  for (let person of data) {
+    labelDots(tree, person);
+  }
 }
 
 function drawDots(arr) {
@@ -100,5 +122,37 @@ function connectDots(person) {
       b: connection
     }
     strings.push(result);
+  }
+}
+function labelDots(tree, person) {
+  let posx = person.pos[0] * s;
+  let posy = person.pos[1] * s;
+  let name;
+  if (
+    posx > -(w / 2) - fullx &&
+    posx < (w / 2) - fullx &&
+    posy > -(h / 2) - fully &&
+    posy < (h / 2) - fully
+  ) {
+    tree.insert(person);
+    if (s < 1.5) {
+      name = person.nickname;
+    } else {
+      name = person.name;
+    }
+    noStroke();
+    textAlign(CENTER);
+    textSize(24);
+    textFont('Medium');
+    if (person.sel) {
+      fill(230, 35, 37, 1);
+      circle(posx, posy, 5);
+      fill(252, 206, 199, 1);
+      text(name, posx, posy + 18);
+    } else {
+      fill(249, 246, 246, 1);
+      circle(posx, posy, 5);
+      text(name, posx, posy + 18);
+    }
   }
 }
