@@ -58,6 +58,20 @@ function draw() {
     labelDots(tree, person);
   }
 
+  if (
+    mouseX > 0 &&
+    mouseY > 0 &&
+    mouseX < width &&
+    mouseY < height
+  ) {
+    if (handtool) {
+      cursor('grab');
+    } else {
+      cursor('default');
+      currrentBlock(tree);
+    }
+  }
+
   $('.close').click(function() {
     let pinid = $(this).parent().attr('id');
     $('#' + pinid).remove();
@@ -168,6 +182,54 @@ function labelDots(tree, person) {
   }
 }
 
+function currrentBlock(qtree) {
+  let mx = mouseX - ((w / 2) + fullx);
+  let my = mouseY - ((h / 2) + fully);
+  if (qtree.subdivided) {
+    currrentBlock(qtree.northwest);
+    currrentBlock(qtree.northeast);
+    currrentBlock(qtree.southwest);
+    currrentBlock(qtree.southeast);
+  } else {
+    if (
+      mx > qtree.bounds.x &&
+      mx < qtree.bounds.x + qtree.bounds.w &&
+      my > qtree.bounds.y &&
+      my < qtree.bounds.y + qtree.bounds.h
+    ) {
+      qtree.points.forEach(person => {
+        if (
+          mx > (person.pos[0] * s) - 15 &&
+          mx < (person.pos[0] * s) + 15 &&
+          my > (person.pos[1] * s) - 15 &&
+          my < (person.pos[1] * s) + 15
+        ) {
+          noStroke();
+          fill(255, 176, 0, 1);
+          circle(person.pos[0] * s, person.pos[1] * s, 7);
+          for (let id of person.cons) {
+            strokeWeight(2);
+            stroke(255, 176, 0, 1);
+            line(
+              person.pos[0] * s, person.pos[1] * s,
+              data[id].pos[0] * s, data[id].pos[1] * s
+            );
+            fill(254, 97, 0, 1);
+            noStroke();
+            if (s < 1.5) {
+              let name = person.nickname;
+              text(name, person.pos[0] * s, person.pos[1] * s + 18);
+            } else {
+              let name = person.name;
+              text(name, person.pos[0] * s, person.pos[1] * s + 18);
+            }
+          }
+          cursor('pointer');
+        }
+      });
+    }
+  }
+}
 function selectPerson(qtree) {
   let mx = mouseX - ((w / 2) + fullx);
   let my = mouseY - ((h / 2) + fully);
