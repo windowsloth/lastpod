@@ -18,8 +18,8 @@
     <!-- <script src="./main.js"></script> -->
     <!-- <script src="./controls.js"></script> -->
     <script>
+      // let about = false;
       $(document).ready(function() {
-        // console.log($(document).width());
         $('#handtool').click(function() {
           handtool = !handtool;
           if (handtool) {
@@ -30,6 +30,9 @@
         });
         $('#zoomslider').change(function () {
           s = $('#zoomslider').val();
+        });
+        $('#about').click(function() {
+          $('#aboutpage').toggle();
         });
       });
     </script>
@@ -74,5 +77,11 @@
       <div id="selectedpins">
       </div>
     </section>
+    <div id="about">
+      <button class="aboutbutton">?</button>
+    </div>
+    <div id="aboutpage">
+      <p>well, hello!</p>
+    </div>
   </body>
 </html>
