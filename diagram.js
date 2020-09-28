@@ -57,6 +57,13 @@ function draw() {
   for (let person of data) {
     labelDots(tree, person);
   }
+
+  $('.close').click(function() {
+    let pinid = $(this).parent().attr('id');
+    $('#' + pinid).remove();
+    data[pinid].sel=false;
+  });
+
   globaltree = tree;
 }
 
