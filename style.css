@@ -15,8 +15,6 @@
     src: url("./m6x11.ttf") format("truetype");
 }
 * {
-  /* background-color: ghostwhite; */
-  /* color: rgba(251, 248, 248); */
   margin: 0;
   padding:0;
   box-sizing: border-box;
