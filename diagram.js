@@ -1,6 +1,8 @@
 let w;
 let h = 600;
 
+const grid=[];
+
 let total = data.length;
 let most = 0;
 for (let person of data) {
