@@ -41,7 +41,7 @@ const data = [
       "theosophist",
       "spiritualist"
     ],
-    "cons": [4, 13, 18, 34],
+    "cons": [4, 13, 18, 34, 39],
     "epfeat": [
       157,
       158,
@@ -244,7 +244,7 @@ const data = [
       "occultist",
       "historical figure"
     ],
-    "cons": [15, 16, 17, 21, 34],
+    "cons": [15, 16, 17, 21, 34, 41],
     "epfeat": [
       55,
       158,
@@ -497,7 +497,7 @@ const data = [
     "nickname":"Mathers",
     "blurb":"One of the founders of the Hermetic Order of the Golden Dawn",
     "tags": [],
-    "cons":[2, 14],
+    "cons":[2, 14, 40, 41],
     "epfeat": []
   },
   {
@@ -536,5 +536,44 @@ const data = [
     "cons":[36],
     "epfeat": []
   },
-
+  {
+    "id": 39,
+    "name":"Bonnie Nettles & Marshall Applewhite",
+    "nickname":"Ti and Do",
+    "blurb":"Leaders of the Heaven's Gate cult, who's mass suicide coincided with the arrival of the Hale-Bopp comet.",
+    "cons":[2],
+    "epfeat":[]
+  },
+  {
+    "id": 40,
+    "name":"William Wynn Wescott",
+    "nickname":"Wescott",
+    "blurb":"One of the founders of the Hermetic Order of the Golden Dawn. Also a member of the Rosicrucians.",
+    "cons":[34, 41],
+    "epfeat":[]
+  },
+  {
+    "id": 41,
+    "name":"the Hermetic Order of the Golden Dawn",
+    "nickname":"Golden Dawn",
+    "blurb":"Prominent Western right-hand path magical society.",
+    "cons":[14, 34, 40],
+    "epfeat":[]
+  },
+  {
+    "id": 42,
+    "name":"the Order of the Solar Temple",
+    "nickname":"Solar Temple",
+    "blurb":"Mysterious French (and French-Canadian) cult. Many of their high-society members died in elaborate, ritualistic, fire-related, murder/suicides.",
+    "cons":[43],
+    "epfeat":[]
+  },
+  {
+    "id": 43,
+    "name":"Rosicrucians",
+    "nickname":"Rosicrucians",
+    "blurb":"Spiritualist group with its roots in esoteric Christianity. There have been many offshoots and varieties over the hundreds of years since it first arose.",
+    "cons":[42],
+    "epfeat":[]
+  }
 ];
