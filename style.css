@@ -47,7 +47,7 @@ article {
   background-color: rgba( 42, 38, 38, 1);
   box-shadow: 0 0 0 50em rgba(4, 0, 0, .5),
               0 0 2em 0 rgba(4, 0, 0, .5);
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 header {
   width: 100%;
@@ -158,6 +158,7 @@ p {
 .info {
   height: 150px;
   padding: 1em;
+  overflow-y: scroll;
   box-shadow: inset 0 1em 2em -2em /*rgba(55, 50, 50, 1)*/ rgba(4, 0, 0, 1);
 }
 .aboutbutton {
