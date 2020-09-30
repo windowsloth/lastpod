@@ -3,7 +3,7 @@ const data = [
     "id": 0,
     "name": "Walter Freeman",
     "nickname": "Freeman",
-    "blurb": "Invented and popularized the lobotomy",
+    "blurb": "A very bad doctor but a great salesman. Popularized the lobotomy.",
     "tags": [
       "flim-flam man",
       "scientist",
@@ -20,7 +20,7 @@ const data = [
     "id": 1,
     "name": "Allen Dulles",
     "nickname": "Dulles",
-    "blurb": "Infamous former CIA director",
+    "blurb": "Infamous former CIA director. Member of the Warren Commission.",
     "tags": [
       "spook",
       "historical figure"
@@ -35,7 +35,7 @@ const data = [
     "id": 2,
     "name": "Helena Blavatsky",
     "nickname": "HPB",
-    "blurb": "Extremely influential early 20th century occultist",
+    "blurb": "Extremely influential early 20th century occultist. Founded the Theosophical Society and wrote several books, including her opus: the Secret Doctrine.",
     "tags": [
       "occultist",
       "theosophist",
@@ -54,7 +54,7 @@ const data = [
     "id": 3,
     "name":"Aleš Hrdlička",
     "nickname": "Hrdlička",
-    "blurb":"Anthropologist, curator at the Smithsonian",
+    "blurb":"Anthropologist, first curator at the Smithsonian.",
     "tags": [
       "scientist"
     ],
@@ -68,7 +68,7 @@ const data = [
     "id": 4,
     "name":"Adolph Hitler",
     "nickname": "Hitler",
-    "blurb":"Leader of the Nazi Party, needs no introduction",
+    "blurb":"Leader of the Nazi Party, one of the great villains of the 20th Century. Needs no introduction.",
     "tags": [
       "mass-murderer",
       "historical figure"
@@ -86,7 +86,7 @@ const data = [
     "id": 5,
     "name":"Joseph Mengele",
     "nickname": "Mengele",
-    "blurb":"Nazi doctor at Auschwitz, real life mad scientist",
+    "blurb":"Nazi doctor at Auschwitz, real life mad scientist. Obsessed with twins, terrible at science.",
     "tags": [
       "mass-murderer",
       "scientist",
@@ -105,7 +105,7 @@ const data = [
     "id": 6,
     "name":"Stanton T. Friedman",
     "nickname": "Friedman",
-    "blurb":"Nuclear physicist and ufologist, uncovered the Majesty 12 papers",
+    "blurb":"Nuclear physicist and famous ufologist. Broke onto the scene with the Roswell Incident and the discovery of the Majesty 12 papers.",
     "tags": [
       "ufologist",
       "scientist"
@@ -124,7 +124,7 @@ const data = [
     "id": 7,
     "name":"John F. Kennedy",
     "nickname": "JFK",
-    "blurb":"35th President of the US",
+    "blurb":"35th President of the US. Had an unfortunate time in Dallas back in November, 1963.",
     "tags": [
       "historical figure"
     ],
@@ -142,8 +142,8 @@ const data = [
   {
     "id": 8,
     "name":"Betty & Barney Hill",
-    "nickname": "Hill",
-    "blurb":"First major abduction case",
+    "nickname": "the Hills",
+    "blurb":"First major abduction case. Their experience became the archetypal UFO abduction scenario.",
     "tags": [
       "alien contacee/witness",
       "abductee"
@@ -161,7 +161,7 @@ const data = [
     "id": 9,
     "name":"Bill Cooper",
     "nickname": "Cooper",
-    "blurb":"Radio host and OG conspiracy theorist",
+    "blurb":"Radio host and OG conspiracy theorist. Very complicated figure who's ideas proved to be very influential, for better or for worse.",
     "tags": [
 
     ],
@@ -175,7 +175,7 @@ const data = [
     "id": 10,
     "name":"J. Allen Hynek",
     "nickname": "Hynek",
-    "blurb":"Ufologist who began as a skeptic working on Project Blue Book",
+    "blurb":"Ufologist who began as a skeptic working on Project Blue Book. Ultimately became a believer and wrote several books on UFO phenomena.",
     "tags": [
       "scientist",
       "spook"
@@ -189,7 +189,7 @@ const data = [
     "id": 11,
     "name":"Timothy McVeigh",
     "nickname": "McVeigh",
-    "blurb":"Perpatrator of the Oklahoma City bombing",
+    "blurb":"Perpetrator of the Oklahoma City bombing. Had a terrible haircut and even worse beliefs about white supremacy.",
     "tags": [
       "mass-murderer"
     ],
@@ -205,7 +205,7 @@ const data = [
     "id": 12,
     "name":"David Koresh",
     "nickname": "Koresh",
-    "blurb":"Leader of the Branch Dividians",
+    "blurb":"Leader of the Branch Dividians, a cult that split off from the Seventh Day Adventists and wound up running afoul of the ATF and the FBI.",
     "tags": [
       "mass-murderer",
       "cult leader"
@@ -222,7 +222,7 @@ const data = [
     "id": 13,
     "name":"Heinrich Himmler",
     "nickname": "Himmler",
-    "blurb":"One of the architects of the Holocaust, head of the SS",
+    "blurb":"One of the architects of the Holocaust and the head of the SS. Former chicken farmer and the worst kind of nerd.",
     "tags": [
       "mass-murderer",
       "occultist",
@@ -239,7 +239,7 @@ const data = [
     "id": 14,
     "name":"Aleister Crowley",
     "nickname": "Crowley",
-    "blurb":"The Great Beast 666: Left-Hand Path magician and cum aficionado",
+    "blurb":"The Great Beast 666: Left-Hand Path magician and cum aficionado. Creator of Thelema and author of several books, including the Book of the Law.",
     "tags": [
       "occultist",
       "historical figure"
@@ -258,7 +258,7 @@ const data = [
     "id": 15,
     "name":"Jack Parsons",
     "nickname": "Parsons",
-    "blurb":"Rocket scientist at JPL and enthusiastic ritual magic user",
+    "blurb":"Rocket scientist at JPL and enthusiastic ritual magic user. Friend, enemy, and cuckold of L. Ron Hubbard at varioius points in time (not necessarily in that order).",
     "tags": [
       "scientist",
       "historical figure"
@@ -273,7 +273,7 @@ const data = [
     "id": 16,
     "name":"L. Ron Hubbard",
     "nickname": "LRH",
-    "blurb":"Sci-fi author and founder of Scientology",
+    "blurb":"Science-fiction author and founder of Scientology. The only things he liked more than boats were money, and also ordering people around while on a boat.",
     "tags": [
       "flim-flam man",
       "cult leader",
@@ -292,7 +292,7 @@ const data = [
     "id": 17,
     "name":"Albert Bender",
     "nickname": "Bender",
-    "blurb":"Ufologist who is partially responsible for the modern Man in Black",
+    "blurb":"Ufologist who was partially responsible for the modern Man in Black.",
     "tags": [
       "ufologist"
     ],
@@ -306,7 +306,7 @@ const data = [
     "id": 18,
     "name":"Joseph Smith",
     "nickname": "Smith",
-    "blurb":"Founder of the Mormon Church, former grave robber",
+    "blurb":"Founder of the Mormon Church, former grave robber. A complicated figure with a penchant for wanting to marry multiple children that ultimately got him killed.",
     "tags": [
       "occultist",
       "cult leader",
@@ -328,7 +328,7 @@ const data = [
     "id": 19,
     "name":"Whitley Strieber",
     "nickname": "Strieber",
-    "blurb":"Famous abductee, author of Communion",
+    "blurb":"A famous abductee, and author of hit book Communion. Did not have the most positive alien experiences, all things considered.",
     "tags": [
       "alien abductee"
     ],
@@ -343,7 +343,7 @@ const data = [
     "id": 20,
     "name":"Eric Harris & Dylan Klebold",
     "nickname": "Columbine Shooters",
-    "blurb":"",
+    "blurb":"The two teenagers responsible for the Columbine school shooting. Labled by the media as nerds who were victims of bullying, but this does not seem to be an accurate assesment.",
     "tags": [
       "mass murderer"
     ],
@@ -357,7 +357,7 @@ const data = [
     "id": 21,
     "name":"Michael Aquino",
     "nickname":"Aquino",
-    "blurb":"Founder of the Temple of Set, worked on the MindWar Program",
+    "blurb":"Founder of the Temple of Set, worked on the MindWar Program. If his eyebrows didn't make him suspicious enough, he is also linked to several murky child abuse cases.",
     "tags": [
       "occultist, spook"
     ],
@@ -371,7 +371,7 @@ const data = [
     "id": 22,
     "name":"Jacques Vallée",
     "nickname":"Vallée",
-    "blurb":"Ufologist, author, and scientist in various fields",
+    "blurb":"Ufologist, author, and scientist in various fields. Has interesting ideas about UFOs and the nature of reality.",
     "tags": [
       "scientist, ufologist"
     ],
@@ -385,7 +385,7 @@ const data = [
     "id": 23,
     "name":"Travis Walton",
     "nickname":"Walton",
-    "blurb":"Famous abductee, basis for the film Fire in the Sky",
+    "blurb":"Famous abductee, basis for the film Fire in the Sky. Worked as a logger.",
     "tags": [
       "abductee"
     ],
@@ -398,7 +398,7 @@ const data = [
     "id": 24,
     "name":"Majestic 12",
     "nickname":"MJ-12",
-    "blurb":"Shadowy organization somehow related to many UFO conspirancies. Also known as Majesty 12",
+    "blurb":"Shadowy organization somehow related to many UFO conspirancies. Also known as Majesty 12.",
     "tags": [],
     "cons": [6, 7, 9, 26, 27, 28, 29, 31, 33],
     "epfeat": [
@@ -409,7 +409,7 @@ const data = [
     "id": 25,
     "name":"Ed Walters",
     "nickname":"Walters",
-    "blurb":"Main figure in the Gulf Breeze UFO Incident",
+    "blurb":"Main figure in the Gulf Breeze UFO Incident. Became a bit of an amateur photographer and captured some very interesting images.",
     "tags": [],
     "cons":[26, 29],
     "epfeat": [
@@ -421,7 +421,7 @@ const data = [
     "id": 26,
     "name":"Mutual UFO Network",
     "nickname":"MUFON",
-    "blurb":"A UFO investigation organization",
+    "blurb":"A UFO investigation organization. Still somewhat active today.",
     "tags": [],
     "cons":[23, 24, 25],
     "epfeat": [
@@ -432,7 +432,7 @@ const data = [
     "id": 27,
     "name":"National Aeronautics and Space Administration",
     "nickname":"NASA",
-    "blurb":"Never a straight answer",
+    "blurb":"Never a straight answer.",
     "tags": [],
     "cons":[15, 24, 28],
     "epfeat": []
@@ -441,7 +441,7 @@ const data = [
     "id": 28,
     "name":"Central Intelligence Agency",
     "nickname":"CIA",
-    "blurb":"The US' infamous intelligence agency. Born out of the OSS",
+    "blurb":"The US' infamous intelligence agency. Born out of the OSS. Loves orchestrating coups, trafficking drugs, and long walks on the beach.",
     "tags": [],
     "cons":[1, 7, 21, 24, 27, 30],
     "epfeat": []
@@ -450,7 +450,7 @@ const data = [
     "id": 29,
     "name":"the Greys",
     "nickname":"Greys",
-    "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look",
+    "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look. Possibly not organic beings, almost definitely a hive mind of some sort. Depends on who you ask.",
     "tags": [],
     "cons":[8, 24, 25, 31, 36, 37],
     "epfeat": []
@@ -459,7 +459,7 @@ const data = [
     "id": 30,
     "name":"NICAP",
     "nickname":"NICAP",
-    "blurb":"National Investigations Comittee on Aerial Phenomena. A UFO research group",
+    "blurb":"National Investigations Comittee on Aerial Phenomena. A UFO research group. Has some shady ties to the government.",
     "tags": [],
     "cons":[17, 23, 28],
     "epfeat": []
@@ -468,7 +468,7 @@ const data = [
     "id": 31,
     "name":"Dwight D. Eisenhower",
     "nickname":"Eisenhower",
-    "blurb":"Former US President, signer of the Greada Treaty",
+    "blurb":"Former US President, signer of the Greada Treaty. Ultimately may be responsible for the modern secret government, although it doesn't seem like that was his intention.",
     "tags": [],
     "cons":[24, 29, 32],
     "epfeat": []
@@ -477,7 +477,7 @@ const data = [
     "id": 32,
     "name":"Valiant Thor",
     "nickname":"Valiant Thor",
-    "blurb":"Venusian ambassador, member of the Secret Space Program. Has purple skin?",
+    "blurb":"Venusian ambassador, member of the Secret Space Program. Has purple skin.",
     "tags": [],
     "cons":[31],
     "epfeat": []
@@ -486,7 +486,7 @@ const data = [
     "id": 33,
     "name":"J. Edgar Hoover",
     "nickname":"Hoover",
-    "blurb":"Founder of the FBI. Villain of history",
+    "blurb":"Founder of the FBI. Villain of history and all-around hateful man.",
     "tags": [],
     "cons":[24, 35],
     "epfeat": []
@@ -495,7 +495,7 @@ const data = [
     "id": 34,
     "name":"Samuel Liddell MacGregor Mathers",
     "nickname":"Mathers",
-    "blurb":"One of the founders of the Hermetic Order of the Golden Dawn",
+    "blurb":"One of the founders of the Hermetic Order of the Golden Dawn, before he was kicked out after his feud with Crowley.",
     "tags": [],
     "cons":[2, 14, 40, 41],
     "epfeat": []
@@ -504,7 +504,7 @@ const data = [
     "id": 35,
     "name":"Federal Bureau of Investigations",
     "nickname":"FBI",
-    "blurb":"US domestic intelligence agency",
+    "blurb":"US domestic intelligence agency.",
     "tags": [],
     "cons":[11, 12, 33],
     "epfeat": []
@@ -513,7 +513,7 @@ const data = [
     "id": 36,
     "name":"Dulce Base",
     "nickname":"Dulce",
-    "blurb":"Top secret intergalactic underground research base in New Mexico",
+    "blurb":"Military base in New Mexico. Also possibly the home of a top secret intergalactic underground research base.",
     "tags": [],
     "cons":[29, 38],
     "epfeat": []
@@ -522,7 +522,7 @@ const data = [
     "id": 37,
     "name":"Reptilians",
     "nickname":"Reptilians",
-    "blurb":"Aggresive, malevolent aliens. Exact motivations vary depending on who you ask",
+    "blurb":"Aggresive, malevolent aliens. Exact motivations vary depending on who's telling the story. Their origins also differ from acount to account, but they've been around for a long time.",
     "tags": [],
     "cons":[29, 36],
     "epfeat": []
@@ -531,7 +531,7 @@ const data = [
     "id": 38,
     "name":"Los Alamos National Lab",
     "nickname":"Los Alamos",
-    "blurb":"Laboratory that was the home base for the Manhattan Project",
+    "blurb":"Laboratory that was the home base for the Manhattan Project.",
     "tags": [],
     "cons":[36],
     "epfeat": []
@@ -572,7 +572,7 @@ const data = [
     "id": 43,
     "name":"Rosicrucians",
     "nickname":"Rosicrucians",
-    "blurb":"Spiritualist group with its roots in esoteric Christianity. There have been many offshoots and varieties over the hundreds of years since it first arose.",
+    "blurb":"Spiritualist group with its roots in esoteric Christianity. There have been many offshoots and variations over the hundreds of years since it first arose.",
     "cons":[40, 42],
     "epfeat":[]
   }
