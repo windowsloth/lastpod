@@ -37,7 +37,7 @@ function setup() {
 function draw() {
   clear();
   translate((w / 2) + fullx, (h / 2) + fully);
-  const boundary = new Block(-w / 2, -h / 2, w, h);
+  const boundary = new Block(-(w / 2) + fullx, -(h / 2) + fully, w, h);
   let tree = new Quadtree(boundary, 4);
   for (let connection of strings) {
     let x1 = connection.a.pos[0] * s;
