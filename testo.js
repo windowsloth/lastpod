@@ -515,7 +515,7 @@ const data = [
     "nickname":"Dulce",
     "blurb":"Military base in New Mexico. Also possibly the home of a top secret intergalactic underground research base.",
     "tags": [],
-    "cons":[29, 38],
+    "cons":[29, 37, 38],
     "epfeat": []
   },
   {
