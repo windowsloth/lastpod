@@ -549,7 +549,7 @@ const data = [
     "name":"William Wynn Wescott",
     "nickname":"Wescott",
     "blurb":"One of the founders of the Hermetic Order of the Golden Dawn. Also a member of the Rosicrucians.",
-    "cons":[34, 41],
+    "cons":[34, 41, 43],
     "epfeat":[]
   },
   {
@@ -573,7 +573,7 @@ const data = [
     "name":"Rosicrucians",
     "nickname":"Rosicrucians",
     "blurb":"Spiritualist group with its roots in esoteric Christianity. There have been many offshoots and varieties over the hundreds of years since it first arose.",
-    "cons":[42],
+    "cons":[40, 42],
     "epfeat":[]
   }
 ];
