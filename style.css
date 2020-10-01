@@ -1,11 +1,7 @@
-@font-face {
-  font-family: "Futile";
-    src: url("./FutilePro.otf") format("opentype");
-}
-@font-face {
-  font-family: "Hungry";
-    src: url("./HungryPro.otf") format("opentype");
-}
+/* @font-face {
+  font-family:'Body Copy';
+    src: url("");
+} */
 @font-face {
   font-family: "Medium";
     src: url("./m5x7.ttf") format("truetype");
@@ -40,7 +36,7 @@ section {
 }
 article {
   width: 90vw;
-  height: 60vw;
+  height: 75vh;
   padding: 1em;
   margin: auto;
   border-radius: .5em;
@@ -54,7 +50,7 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 0 0 1em 0;
+  /* padding: 0 0 .5em 0; */
   margin: auto;
 }
 h1, h2 {
@@ -84,26 +80,30 @@ nav {
 button {
   position: relative;
   display: flex;
-  font-family: "Medium", sans-serif;
+  font-family: "Medium", monospace;
+  /* font-size: 1em; */
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 92, 73, 1);
+  background-color: rgba(180, 232, 118);
+  /* background-color: rgba(255, 92, 73, 1); */
   width: 2em;
   height: 2em;
   border:none;
   border-radius: 50%;
   color: rgba(247, 230, 230, 1);
-  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
+  /* box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
               .1em .1em 0 .05em rgba(255, 92, 73, 1),
-              inset .75em 1em 1em -1em rgba(255, 128, 108, 1);
+              inset .75em 1em 1em -1em rgba(255, 128, 108, 1); */
   cursor: pointer;
 }
 p {
   background-color: transparent;
   color: rgba(246, 243, 243, 1);
-  font-family: 'Medium', serif;
-  font-size: 1.5em;
+  padding: 0 0 1em 0;
+  /* font-family: 'Medium', serif; */
+  font-family: 'B612 Mono', monospace;
+  font-size: 1em;
   /* color: dimgray; */
   text-align: left justify;
 }
@@ -133,7 +133,7 @@ p {
   color: rgba(251, 248, 248, 1);
   font-size: 1.25em;
   font-family: "Large", serif;
-  padding: 1em 3em 0 3em;
+  padding: 0 3em 0 3em;
 }
 .active {
   background: red;
@@ -151,9 +151,12 @@ p {
   margin-top: -1em;
 }
 .close {
+  background-color: rgba(255, 92, 73, 1);
   top: -1em;
   left: -1em;
-
+  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
+              .1em .1em 0 .05em rgba(255, 92, 73, 1),
+              inset .75em 1em 1em -1em rgba(255, 128, 108, 1);
 }
 .info {
   height: 150px;
@@ -161,10 +164,23 @@ p {
   overflow-y: scroll;
   box-shadow: inset 0 1em 2em -2em /*rgba(55, 50, 50, 1)*/ rgba(4, 0, 0, 1);
 }
-.aboutbutton {
-  width: 1em;
-  height: 1em;
-  font-size: 2em;
+#aboutbutton {
+  width: .75em;
+  height: .75em;
+  font-size: 3em;
+}
+.closed {
+  color: rgba(246, 243, 243, 1);
+  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
+              .075em .075em 0 rgba(129, 181, 50),
+              inset .75em 1em 1em -1em rgba(215, 244, 189);
+}
+.open {
+  background-color: rgba(255, 92, 73, 1);
+  box-shadow: .25em .25em 2em 0 rgba(4, 0, 0, .5),
+              .075em .075em 0 rgba(255, 92, 73, 1),
+              inset .75em 1em 1em -1em rgba(255, 128, 108, 1);
+  /* background-color: blue; */
 }
 .flexbox {
   display: flex;

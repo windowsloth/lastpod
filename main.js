@@ -273,7 +273,7 @@ function selectperson(qtree) {
           if (person.sel) {
             $("#selectedpins").append(`
               <div id='` + person.id + `' class='pin'>
-                <button class='close'>	&#128473; </button>
+                <button class='close'>	x </button>
                 <h2 class='name'>` + person.name + `</h2>
                 <div class='info'>
                   <p>` + person.blurb + `</p>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Testing Grounds</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet"></link>
     <script
 		  src="https://code.jquery.com/jquery-3.5.1.js"
@@ -28,15 +29,17 @@
             $(this).attr('class', 'not-active');
           }
         });
-        $('#zoomslider').change(function () {
-          s = $('#zoomslider').val();
-        });
+        // $('#zoomslider').change(function () {
+        //   s = $('#zoomslider').val();
+        // });
         $('#about').click(function() {
           about = !about;
           if (about) {
             $('#aboutpage').attr('class', 'flexbox');
+            $('#aboutbutton').attr('class', 'open');
           } else {
             $('#aboutpage').attr('class', 'hidden');
+            $('#aboutbutton').attr('class', 'closed');
           }
         });
       });
@@ -52,14 +55,14 @@
       <div id='container'>
       </div>
       <nav>
-        <label class= "label">
+        <!-- <label class= "label">
           HAND TOOL:
           <input
             type="checkbox"
             id="handtool"
             title="Use the hand tool to move around the diagram"
           >
-        </label>
+        </label> -->
 
         <label class= "label">
           ZOOM:
@@ -90,7 +93,11 @@
 	  list, but I am working on adding to it over time. There are a lot of
 	  episodes to comb through, so this is represents just what I have
 	  listened to recently, and what I could remember off the top of my head.</p>
-        <h2>Important Notes</h2>
+        <h2>Help</h2>
+        <p>Click and drag to move around the diagram. Use the zoom slider to
+          zoom in/out. Click on "pins" to highlight connections, and to display
+          additional information below the diagram.</p>
+        <h2>Other Notes</h2>
         <p>You might notice that there are almost no Heavy Hitters included in
           in the chart. There's a handful of reasons for that.</p>
         <p>First of all, the Heavy Hitters are for the most part lone wolves.
@@ -117,7 +124,7 @@
       </article>
     </div>
     <div id="about">
-      <button class="aboutbutton">?</button>
+      <button id="aboutbutton" class="closed">?</button>
     </div>
   </body>
 </html>

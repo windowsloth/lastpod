@@ -23,7 +23,9 @@ let globaltree;
 
 function setup() {
   colorMode(RGB, 255, 255, 255, 1);
+  textSize(24);
   w = windowWidth;
+  h = windowHeight * .75;
   cols = w / cellsize;
   rows = h / cellsize;
   const canvas = createCanvas(w, h);
@@ -35,6 +37,8 @@ function setup() {
 }
 
 function draw() {
+  s = $('#zoomslider').val();
+  cursor('default');
   clear();
   translate((w / 2) + fullx, (h / 2) + fully);
   const boundary = new Block(-((w / 2) + fullx), -((h / 2) + fully), w, h);
@@ -64,12 +68,7 @@ function draw() {
     mouseX < width &&
     mouseY < height
   ) {
-    if (handtool) {
-      cursor('grab');
-    } else {
-      cursor('default');
-      currrentBlock(tree);
-    }
+    currrentBlock(tree);
   }
 
   $('.close').click(function() {
@@ -125,6 +124,13 @@ function stickPin(person, score) {
       grid[(xcol    ) + (ycol + 1) * cols] = true;
       grid[(xcol - 1) + (ycol + 1) * cols] = true;
       grid[(xcol - 1) + (ycol    ) * cols] = true;
+
+      let namelen = textWidth(person.nickname) / 2;
+      for (let i = x - namelen; i < x + namelen; i += cellsize) {
+        grid[floor(i / cellsize) + ( y / cellsize) * cols ] = true;
+        grid[floor(i / cellsize) + ((y + 18) / cellsize) * cols ] = true;
+      }
+
       success = true;
 
       break;
@@ -167,7 +173,7 @@ function labelDots(tree, person) {
     }
     noStroke();
     textAlign(CENTER);
-    textSize(24);
+    // textSize(24);
     textFont('Medium');
     if (person.sel) {
       fill(230, 35, 37, 1);
@@ -205,16 +211,20 @@ function currrentBlock(qtree) {
           my < (person.pos[1] * s) + 15
         ) {
           noStroke();
-          fill(255, 176, 0, 1);
+          // fill(255, 176, 0, 1);
+          fill(170, 35, 31, 1);
           circle(person.pos[0] * s, person.pos[1] * s, 7);
           for (let id of person.cons) {
             strokeWeight(2);
-            stroke(255, 176, 0, 1);
+            // stroke(255, 176, 0, 1);
+            stroke(170, 35, 31, 1);
+            // fill(252, 206, 199, 1);
             line(
               person.pos[0] * s, person.pos[1] * s,
               data[id].pos[0] * s, data[id].pos[1] * s
             );
-            fill(254, 97, 0, 1);
+            fill(252, 206, 199, 1);
+            // fill(254, 97, 0, 1);
             noStroke();
             if (s < 1.5) {
               let name = person.nickname;
@@ -273,7 +283,12 @@ function selectPerson(qtree) {
 }
 
 function mouseDragged() {
-  if (handtool) {
+  if (
+    mouseX > 0 &&
+    mouseY > 0 &&
+    mouseX < width &&
+    mouseY < height
+  ) {
     cursor('grabbing');
     fullx += mouseX - pmouseX;
     fully += mouseY - pmouseY;
@@ -281,7 +296,5 @@ function mouseDragged() {
   }
 }
 function mouseReleased() {
-  if (!handtool) {
     selectPerson(globaltree);
-  }
 }

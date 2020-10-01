@@ -228,7 +228,7 @@ const data = [
       "occultist",
       "historical figure"
     ],
-    "cons": [4, 5, 21],
+    "cons": [2, 4, 5, 21],
     "epfeat": [
       158,
       349,
@@ -332,7 +332,7 @@ const data = [
     "tags": [
       "alien abductee"
     ],
-    "cons": [],
+    "cons": [29],
     "epfeat": [
       72,
       134,
@@ -452,7 +452,7 @@ const data = [
     "nickname":"Greys",
     "blurb":"Alien race of questionable motivations. Inspiration for the classic alien look. Possibly not organic beings, almost definitely a hive mind of some sort. Depends on who you ask.",
     "tags": [],
-    "cons":[8, 24, 25, 31, 36, 37],
+    "cons":[8, 19, 24, 25, 31, 36, 37],
     "epfeat": []
   },
   {
