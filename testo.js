@@ -342,7 +342,7 @@ const data = [
   {
     "id": 20,
     "name":"Eric Harris & Dylan Klebold",
-    "nickname": "Columbine Shooters",
+    "nickname": "Harris & Klebold",
     "blurb":"The two teenagers responsible for the Columbine school shooting. Labled by the media as nerds who were victims of bullying, but this does not seem to be an accurate assesment.",
     "tags": [
       "mass murderer"
@@ -522,7 +522,7 @@ const data = [
     "id": 37,
     "name":"Reptilians",
     "nickname":"Reptilians",
-    "blurb":"Aggresive, malevolent aliens. Exact motivations vary depending on who's telling the story. Their origins also differ from acount to account, but they've been around for a long time.",
+    "blurb":"Aggresive, malevolent aliens. Exact motivations vary depending on who's telling the story. Their exact origins also differ from acount to account, but they've definitely been around for a long time.",
     "tags": [],
     "cons":[29, 36],
     "epfeat": []

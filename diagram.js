@@ -125,10 +125,12 @@ function stickPin(person, score) {
       grid[(xcol - 1) + (ycol + 1) * cols] = true;
       grid[(xcol - 1) + (ycol    ) * cols] = true;
 
-      let namelen = textWidth(person.nickname) / 2;
+      let namelen = textWidth(person.name) / 2;
+      // console.log()
       for (let i = x - namelen; i < x + namelen; i += cellsize) {
+        grid[floor(i / cellsize) + ((y - 24) / cellsize) * cols ] = true;
         grid[floor(i / cellsize) + ( y / cellsize) * cols ] = true;
-        grid[floor(i / cellsize) + ((y + 18) / cellsize) * cols ] = true;
+        grid[floor(i / cellsize) + ((y + 24) / cellsize) * cols ] = true;
       }
 
       success = true;
@@ -173,7 +175,6 @@ function labelDots(tree, person) {
     }
     noStroke();
     textAlign(CENTER);
-    // textSize(24);
     textFont('Medium');
     if (person.sel) {
       fill(230, 35, 37, 1);
@@ -211,20 +212,16 @@ function currrentBlock(qtree) {
           my < (person.pos[1] * s) + 15
         ) {
           noStroke();
-          // fill(255, 176, 0, 1);
           fill(170, 35, 31, 1);
           circle(person.pos[0] * s, person.pos[1] * s, 7);
           for (let id of person.cons) {
             strokeWeight(2);
-            // stroke(255, 176, 0, 1);
             stroke(170, 35, 31, 1);
-            // fill(252, 206, 199, 1);
             line(
               person.pos[0] * s, person.pos[1] * s,
               data[id].pos[0] * s, data[id].pos[1] * s
             );
             fill(252, 206, 199, 1);
-            // fill(254, 97, 0, 1);
             noStroke();
             if (s < 1.5) {
               let name = person.nickname;
